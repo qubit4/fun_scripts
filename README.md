@@ -1,2 +1,1 @@
-# basic.python.code
-level: noob
+# basic.python.code.level: newbie
