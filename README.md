@@ -4,12 +4,18 @@ here you will find some basic stuff
 
 quizzgame
 
-diceroller
+dice roller
 
 permutations
 
 malware alertbox
 
 other stuff
+
+game 2
+
+game 3
+
+and other stuff
 
 
