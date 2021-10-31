@@ -1,20 +1,20 @@
-### basic python code _____ guess the number or die / with stamina
+### basic python code _____ guess a number or die / with stamina
 
 import random
 import time
 
 print("This is game number 2. Guess the number or die.")
 time.sleep (3)
-print("First, rolling 2 dices for your stamina.")
+print("First, rolling 1 six-sided dice for your stamina.")
 time.sleep (3)
 
 x = random.randint(0,6)
-y = random.randint(0,6)
-stamina = x + y
+stamina = x
 
-print("You rolled {} and {}. Your stamina is {}. \nIf your stamina comes down to 0, you die.".format(x, y, stamina))
+
+print("You rolled {}. Your stamina is {}. \nIf your stamina comes down to 0, you die.".format(x, stamina))
 time.sleep(3)
-print("Second, rolling 2 dices to establish X.")
+print("Second, rolling 2 six-sided dices to establish X.")
 time.sleep(3)
 
 x = random.randint(0,6)
@@ -34,11 +34,11 @@ while True:
     else:
         pass
 
-    user_guess = input("Now guess this number or die: ")
+    user_guess = input("Now guess the number or die: ")
     if user_guess.isdigit():
         user_guess = int(user_guess)
     else:
-        print("This is not a number. For this you will pay.")
+        print("This is not a number. You have to pay.")
         stamina -= 1
         print("Your stamina is {}.".format(stamina))
         continue
@@ -47,8 +47,26 @@ while True:
         print("Correct. You get + 5 to your stamina. Proceed to the next room.")
         stamina += 5
         quit()
+    
     else:
         print("Incorrect.")
         stamina -= 1
-        print("Your stamina is {}.".format(stamina))
-        continue
+        if stamina == 0:
+            print("You are dead.")
+            exit()
+        else:
+            print("Your stamina is {}.".format(stamina))
+            print("Do you want a hint in exchange for stamina? Yes / No")
+            answer = input()
+
+            if answer.lower() == "yes":
+                if user_guess <= target_number:
+                    print("Your guess is below the target number.")
+                    stamina -= 1
+                    print("Your stamina is {}.".format(stamina))
+                else: 
+                    print("Your guess is above the target number.")
+                    stamina -= 1
+                    print("Your stamina is {}.".format(stamina))
+            else:
+                continue
