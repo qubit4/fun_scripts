@@ -1,4 +1,4 @@
-### itertools, permutations, timeit
+### basic python code _____ itertools, permutations, timeit
 
 import timeit
 import itertools
