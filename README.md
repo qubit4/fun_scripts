@@ -4,10 +4,12 @@ here you will find some basic stuff
 
 quizzgame
 
+diceroller
+
 permutations
 
-chatbot
+malware alertbox
 
-alertbox
+other stuff
 
 
