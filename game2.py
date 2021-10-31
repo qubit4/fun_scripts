@@ -1,4 +1,4 @@
-### basic python code _____ guess a number or die / with stamina
+### basic python code _____ guess the number or die / with stamina
 
 import random
 import time
@@ -38,7 +38,7 @@ while True:
     if user_guess.isdigit():
         user_guess = int(user_guess)
     else:
-        print("This is not a number. For this you will suffer.")
+        print("This is not a number. For this you will pay.")
         stamina -= 1
         print("Your stamina is {}.".format(stamina))
         continue
