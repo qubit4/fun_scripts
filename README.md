@@ -1,1 +1,1 @@
-basic.python.code / level: newbie
+basic python code
