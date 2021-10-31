@@ -73,5 +73,5 @@ else:
         print("Incorrect :(")
         time.sleep(2)
 
-print("You have reached the end of Quizzgame. Thanks for playing! \nYou leave with {} $. Enjoy.".format(score))
+print("You have reached the end of Quizzgame. Thanks for playing! \nYou leave with {} $.".format(score))
 
