@@ -4,9 +4,13 @@ here you will find some basic stuff
 
 quizzgame
 
+calculator with GUI
+
 dice roller
 
 permutations
+
+find ISS
 
 malware alertbox
 
