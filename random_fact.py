@@ -27,7 +27,7 @@ def get_fact():
     T.delete('1.0', tk.END)
     T.insert(tk.END, fact)
 
-# Next not working
+
 b1 = Button(root, text = "Next", command = get_fact)
 b2 = Button(root, text = "Exit", command = root.destroy)
 
