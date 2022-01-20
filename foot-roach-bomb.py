@@ -1,3 +1,5 @@
+# Rock Paper Scissors with a twist. Inspired by Cowboy Bebop series.
+
 import random
 
 print("Rules: FOOT beats ROACH. ROACH beats BOMB. BOMB beats FOOT. \nThe winner is the first player to reach 5 wins.")
