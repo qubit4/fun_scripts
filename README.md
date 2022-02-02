@@ -1,1 +1,1 @@
-Fun scripts... Rock Paper Scissors 2.0 (Foot-Roach-Bomb), simulation of simple malware (false_alert), simple GUI providing random useless facts and simulation of Mission Impossible self-destructing device.
+Fun scripts... rock paper scissors 2.0 (foot_roach_bomb), simulation of simple malware (false_alert), simple GUI providing random useless facts and simulation of Mission Impossible self-destructing device.
