@@ -35,7 +35,7 @@ def get_mission():
 
     # countdown until self-destruction
     countdown(10)
-    # ANSI escape sequence clearing terminal
+    # ANSI escape sequences clearing terminal
     print("\033c")
     print("\x1bc")
     # script now self-deletes
