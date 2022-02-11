@@ -5,7 +5,7 @@ import requests
 
 root = Tk()
 root.geometry("400x300")
-root.title("API random useless fact")
+root.title("random useless fact")
 
 T = Text(root, height=10, width=40)
 
@@ -13,19 +13,19 @@ l = Label(root, text="Fact")
 l.config(font=("Courier", 14))
 
 api_url = "https://uselessfacts.jsph.pl//random.json?language=en"
-r = requests.get(api_url)
-data = r.json()
+response = requests.get(api_url)
+data = response.json()
 fact = data["text"]
 
 
 def get_fact():
-    r = requests.get(api_url)
-    if r.status_code == 200:
-        data = r.json()
+    response = requests.get(api_url)
+    if response.status_code == 200:
+        data = response.json()
         fact = data['text']
     else:
-        fact = "Failed to read fact data. Status code is : {}".format(
-            r.status_code)
+        fact = "Failed to read data. Status code is : {}".format(
+            response.status_code)
     T.delete("1.0", tk.END)
     T.insert(tk.END, fact)
 
