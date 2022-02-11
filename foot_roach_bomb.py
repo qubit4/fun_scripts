@@ -1,4 +1,4 @@
-# Rock Paper Scissors with a twist. Inspired by Cowboy Bebop series.
+# Rock Paper Scissors 2.0. Inspired by Cowboy Bebop series.
 
 import random
 
