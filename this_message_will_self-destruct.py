@@ -7,8 +7,11 @@ from sys import argv
 def countdown(count):
 
     while count:
+        # divmod() takes two numbers and returns a tuple consisting of quotient and remainder
         mins, secs = divmod(count, 60)
+        # :02d formats a decimal integer (d) to a field of minimum width 2
         timeformat = "{:02d}:{:02d}".format(mins, secs)
+        # \r overwrites the current line
         print(timeformat, end="\r")
         time.sleep(1)
         count -= 1
